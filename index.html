@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>FastFitHub vs Fitelo — No Competition</title>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&family=Playfair+Display:wght@600;700&display=swap" rel="stylesheet">
+  <style>
+    :root{
+      --bg-1:#0A0F1F; --bg-2:#0D1526; --card:#111a2e; --muted:#b6c4d9; --accent:#ff3336; --glass:rgba(255,255,255,0.04);
+      --radius:16px;
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0;
+      font-family:Inter, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+      background:linear-gradient(180deg,var(--bg-1) 0%, var(--bg-2) 100%);
+      color:#f2f6ff;
+      -webkit-font-smoothing:antialiased;
+      -moz-osx-font-smoothing:grayscale;
+      padding:48px 20px;
+    }
+
+    .shell{max-width:1100px;margin:0 auto}
+
+    /* Header / Hero */
+    .hero{display:grid;grid-template-columns:1fr 420px;gap:28px;align-items:center}
+    .hero-card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));padding:28px;border-radius:var(--radius);border:1px solid rgba(255,255,255,0.03);box-shadow:0 8px 30px rgba(2,6,23,0.6)}
+    .kicker{display:inline-block;padding:6px 12px;border-radius:999px;background:rgba(255,255,255,0.03);color:#c4d2e6;font-weight:600;font-size:13px}
+    h1{font-family:'Playfair Display', Georgia, serif;margin:12px 0 6px;font-size:36px;line-height:1.02}
+    p.lead{color:#c4d2e6;margin:0;font-size:16px}
+
+    .stats{display:flex;gap:12px;margin-top:18px}
+    .stat{background:linear-gradient(90deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));padding:10px 14px;border-radius:12px;border:1px solid rgba(255,255,255,0.02);text-align:center}
+    .stat strong{display:block;font-size:18px}
+    .stat small{display:block;color:#c4d2e6;font-size:12px}
+
+    /* Right panel */
+    .right-hero{background:linear-gradient(180deg, rgba(255,77,79,0.12), rgba(255,77,79,0.04));padding:22px;border-radius:12px;border:1px solid rgba(255,255,255,0.02)}
+    .right-hero h3{margin:0 0 6px;font-size:20px}
+    .pill{display:inline-block;padding:8px 12px;border-radius:999px;background:rgba(255,255,255,0.04);font-weight:700}
+
+    /* Comparison area */
+    .compare{display:grid;grid-template-columns:1fr 1fr;gap:18px;margin-top:28px}
+    .panel{background:linear-gradient(180deg, rgba(255,255,255,0.015), rgba(255,255,255,0.01));padding:20px;border-radius:14px;border:1px solid rgba(255,255,255,0.03)}
+    .panel h4{margin:0 0 10px}
+    .panel p{color:#c4d2e6;margin:0 0 12px}
+
+    .feature{display:flex;gap:12px;align-items:flex-start;margin:12px 0}
+    .feature svg{flex:0 0 44px;height:44px;width:44px;border-radius:10px;background:rgba(255,255,255,0.02);padding:8px}
+    .feature .ftext{flex:1}
+    .feature .ftext strong{display:block}
+
+    .savage{color:var(--accent);font-weight:800}
+
+    /* Full-width callout */
+    .callout{margin-top:26px;padding:18px;border-radius:12px;background:linear-gradient(90deg, rgba(3,10,20,0.65), rgba(0,0,0,0.35));border:1px solid rgba(255,255,255,0.02)}
+    .callout p{margin:0;color:#cfe8ff}
+
+    /* Responsive */
+    @media (max-width:980px){
+      .hero{grid-template-columns:1fr;}
+      .compare{grid-template-columns:1fr}
+      body{padding:28px 14px}
+    }
+
+    /* subtle entrance */
+    .animate-up{transform:translateY(8px);opacity:0;animation:up .6s forwards ease-out}
+    .animate-delay{animation-delay:.08s}
+    @keyframes up{to{transform:none;opacity:1}}
+  </style>
+</head>
+<body>
+  <div class="shell">
+    <div class="hero-card hero animate-up">
+      <div>
+        <span class="kicker">SAVAGE TAKE</span>
+        <h1>Why <span class="savage">FastFitHub</span> Destroys Fitelo</h1>
+        <p class="lead">Fitelo plays safe. FastFitHub plays to win. No comparison. FastFitHub is precision transformation for winners.</p>
+
+        <div class="stats">
+          <div class="stat">
+            <strong>Founder‑Led</strong>
+            <small>Consistent elite coaching</small>
+          </div>
+          <div class="stat">
+            <strong>Premium Only</strong>
+            <small>Upfront pricing, no time‑wasters</small>
+          </div>
+          <div class="stat">
+            <strong>Weekly Wins</strong>
+            <small>Transformation cadence</small>
+          </div>
+        </div>
+      </div>
+
+      <aside class="right-hero animate-up animate-delay">
+        <h3>Quick Brutal Summary</h3>
+        <p class="lead">Fitelo sells PDFs. FastFitHub delivers reputations. If you want safe — go elsewhere. If you want elite, stay.</p>
+        <div style="margin-top:12px"><span class="pill">High-Ticket</span> <span class="pill" style="margin-left:8px">Founder-Led</span></div>
+      </aside>
+    </div>
+
+    <div class="compare">
+      <section class="panel animate-up">
+        <h4 class="savage">1) Fitelo sells diet plans. FastFitHub sells transformations.</h4>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M12 2L14.5 8H9.5L12 2Z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div class="ftext"><strong>Fitelo</strong><p>Hands you a plan and wishes you luck.</p></div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.2"/></svg>
+          <div class="ftext"><strong>FastFitHub</strong><p>Grabs you by the collar, drags you to your best physique, and holds you accountable like your reputation is on the line.</p></div>
+        </div>
+
+        <h4 class="savage" style="margin-top:16px">2) Fitelo is a call center. FastFitHub is a command center.</h4>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><rect x="3" y="3" width="18" height="18" rx="3" stroke="currentColor" stroke-width="1.2"/></svg>
+          <div class="ftext"><strong>Fitelo</strong><p>Hundreds of random coaches — inconsistent quality and robotic responses.</p></div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 12h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <div class="ftext"><strong>FastFitHub</strong><p>Founder-led, elite-level coaching from someone who’s done it & proven it. No outsourcing greatness.</p></div>
+        </div>
+      </section>
+
+      <section class="panel animate-up">
+        <h4 class="savage">3) Fitelo is for casuals. FastFitHub is for killers.</h4>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 5v14" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <div class="ftext"><strong>Fitelo</strong><p>Targets people who need motivation and babysitting.</p></div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <div class="ftext"><strong>FastFitHub</strong><p>Targets winners — self-driven HNIs, celebrities, entrepreneurs who want results now.</p></div>
+        </div>
+
+        <h4 class="savage" style="margin-top:16px">4) Fitelo scales. FastFitHub dominates.</h4>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M3 7h18" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <div class="ftext"><strong>Fitelo</strong><p>Volume-first — built to onboard many, not to perfect one.</p></div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l3 7h-6l3-7z" stroke="currentColor" stroke-width="1.2"/></svg>
+          <div class="ftext"><strong>FastFitHub</strong><p>Precision-based — engineered for speed, accuracy, and high-ticket transformations.</p></div>
+        </div>
+
+        <h4 class="savage" style="margin-top:16px">5) Fitelo is affordable. FastFitHub is premium.</h4>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 6v6l4 2" stroke="currentColor" stroke-width="1.2" stroke-linecap="round"/></svg>
+          <div class="ftext"><strong>Fitelo</strong><p>Cheap plans attract cheap commitment.</p></div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M6 3h12v18H6z" stroke="currentColor" stroke-width="1.2"/></svg>
+          <div class="ftext"><strong>FastFitHub</strong><p>Charges what transformation is worth — filters out time-wasters instantly.</p></div>
+        </div>
+
+        <h4 class="savage" style="margin-top:16px">6) Fitelo gives advice. FastFitHub gives outcomes.</h4>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="12" r="10" stroke="currentColor" stroke-width="1.2"/></svg>
+          <div class="ftext"><strong>Fitelo</strong><p>Here’s your plan.</p></div>
+        </div>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M4 12h16M8 8v8M16 8v8" stroke="currentColor" stroke-width="1.2"/></svg>
+          <div class="ftext"><strong>FastFitHub</strong><p>Here’s your new life. Execute.</p></div>
+        </div>
+
+        <h4 class="savage" style="margin-top:16px">7) Fitelo builds users. FastFitHub builds brands.</h4>
+        <div class="feature">
+          <svg viewBox="0 0 24 24" fill="none"><path d="M12 2l2 5h5l-4 3 1 5-4-3-4 3 1-5-4-3h5z" stroke="currentColor" stroke-width="1.2"/></svg>
+          <div class="ftext"><strong>FastFitHub</strong><p>Your success becomes your identity, your physique becomes your credibility, your transformation becomes your business card — ROI is insane.</p></div>
+        </div>
+      </section>
+    </div>
+
+    <div class="callout animate-up">
+      <p><strong>Final verdict:</strong> This isn't a competition — it's a mismatch. FastFitHub doesn't compete with volume plays. It obliterates them. Want to join winners? Apply. We don't do discounts.</p>
+    </div>
+  </div>
+</body>
+</html>
